@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" >
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <style>
+        body {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            margin-bottom: 5px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        section > img {
+            width: 100%;
+            height: 100vh;
+            border-radius: 20px;
+            opacity: 0.7;
+            position: absolute;
+        }
+
+        /*---------------------------------------first page------------*/
+        section:nth-child(1) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+        }
+
+        section:nth-child(1) > aside {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 3px solid black;
+            position: absolute;
+            margin: auto;
+            top: 70px;
+            left: 0;
+            right: 0;
+        }
+
+        section:nth-child(1) > section > img {
+            width: 1cm;
+            height: 1cm;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        section:nth-child(1) > aside > img {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+
+        section:nth-child(1) > section > ul {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        section:nth-child(1) > section > ul > li {
+            font-size: larger;
+            display: inline;
+            padding: 10px;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        section:nth-child(1) > section {
+            margin: auto;
+            width: 97.5vw;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            z-index: 5;
+            border: 2px solid black;
+            background: white;
+        }
+
+        section:nth-child(1) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 10cm;
+            background: black;
+            border-radius: 20px;
+            z-index: 2;
+        }
+
+        section:nth-child(1) > img > area {
+            position: absolute;
+        }
+
+        section:nth-child(1) > div {
+            position: absolute;
+            left: 5.5cm;
+            top: 7.5cm;
+            background: white;
+            border-radius: 20px;
+        }
+
+        section:nth-child(1) > div > ul > li {
+            font-size: x-large;
+            padding: 30px;
+            display: inline;
+        }
+
+        section:nth-child(1) > ul {
+            font-size: larger;
+            position: absolute;
+            top: 11cm;
+            left: 3cm;
+        }
+
+        section:nth-child(1) > img {
+            z-index: -1
+        }
+
+        section:nth-child(1) > h1 {
+            width: 8cm;
+            position: absolute;
+            top: 3cm;
+            left: 22cm;
+        }
+
+        /*---------------------------------------Second page------------*/
+        section:nth-child(2) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(2) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(2) > p {
+            width: 30cm;
+            position: absolute;
+            top: 1.2cm;
+            left: 3cm;
+            font-size: large;
+        }
+
+        section:nth-child(2) > section {
+            width: 60%;
+            height: 60vh;
+            position: absolute;
+            margin: auto;
+            top: 5cm;
+            left: 0;
+            right: 0;
+            /*background: #EFF9B4;*/
+            background: linear-gradient(white,#EFF9B4);
+        }
+
+        section:nth-child(2) > section > ul {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-height: 5cm;
+        }
+
+        section:nth-child(2) > section > ul > li {
+            padding: 10px;
+            font-size: large;
+        }
+
+        section:nth-child(2) > section > h1 {
+            font-size: x-large;
+            position: absolute;
+            top: 0;
+            left: 1cm;
+        }
+
+        section:nth-child(2) > section > ul:nth-child(2) {
+            position: absolute;
+            left: 3cm;
+        }
+
+        section:nth-child(2) > section > ul:nth-child(3) {
+            position: absolute;
+            left: 12cm;
+        }
+
+        /*---------------------------------------Third page------------*/
+
+        section:nth-child(3) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(3) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(3) > section {
+            width: 80%;
+            height: 70vh;
+            position: absolute;
+            margin: auto;
+            top: 3cm;
+            left: 0;
+            right: 0;
+            background: linear-gradient(white,#EFF9B4);
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+        }
+
+        section:nth-child(3)>section>div{
+            width: 8cm;
+            height: 20px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background: white;
+            margin-left: 3cm;
+            margin-top: 3cm;
+            z-index: 2;
+        }
+
+        section:nth-child(3)>section>h1{
+            margin-top: 1cm;
+            margin-left: 2cm;
+        }
+
+        section:nth-child(3)>section>div>div{
+            width: 5cm;
+            height: 20px;
+            border-radius: 20px;
+            background: green;
+            z-index: 2;
+        }
+
+        /*---------------------------------------fourth page------------*/
+        section:nth-child(4) {
+            /*background: #80F3F3;*/
+            background: linear-gradient(white,#80F3F3);
+            height: 12cm;
+        }
+
+        section:nth-child(4) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(4) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(4)>div:nth-child(1){
+            width: 10cm;
+            height: 2cm;
+            background: #87F951;
+            position: absolute;
+            top: 9cm;
+            left: 8cm
+        }
+        section:nth-child(4)>div:nth-child(2){
+            width: 10cm;
+            height: 2cm;
+            background: #FCFF80;
+            position: absolute;
+            top: 7cm;
+            left: 12cm
+        }
+        section:nth-child(4)>div:nth-child(3){
+            width: 10cm;
+            height: 2cm;
+            background: #FBC358;
+            position: absolute;
+            top: 5cm;
+            left: 16cm
+        }
+        section:nth-child(4)>div:nth-child(4){
+            width: 10cm;
+            height: 2cm;
+            background: #FA4D4D;
+            position: absolute;
+            top: 3cm;
+            left: 20cm
+        }
+        section:nth-child(4)>img{
+            width: 2cm;
+            height: 3cm;
+            position: absolute;
+            top: 2cm;
+            left: 18cm;
+        }
+        section:nth-child(4)>div>h1{
+            text-align: center;
+            transform: translate(0%, 60%);
+            margin: 0;
+        }
+        /*---------------------------------------fifth page------------*/
+
+        section:nth-child(5) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(5) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+
+        section:nth-child(5) > section {
+            width: 80%;
+            height: 70vh;
+            position: absolute;
+            margin: auto;
+            top: 3cm;
+            left: 0;
+            right: 0;
+            background: linear-gradient(white,#EFF9B4);
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+
+        section:nth-child(5)>section>div{
+            width: 180px;
+            height: 120px;
+            border-radius: 100%;
+            background: black;
+            z-index: 2;
+            margin-top: 1cm;
+            margin-left: 1cm;
+        }
+        section:nth-child(5)>section>div>img{
+            z-index: 2;
+            margin-left: 1.5cm;
+            margin-top: 0.5cm;
+        }
+        section:nth-child(5)>section>h1{
+            margin-top: 4.5cm;
+            margin-left: 2cm;
+        }
+
+        /*---------------------------------------sixth page------------*/
+        section:nth-child(6) {
+            /*background: #80F3F3;*/
+            background: linear-gradient(white,#80F3F3);
+            height: 14cm;
+        }
+
+        section:nth-child(6) > nav {
+            width: 25%;
+            height: 40px;
+            position: sticky;
+            top: 1.5cm;
+            background: black;
+            border-radius: 20px;
+            border: none;
+        }
+
+        section:nth-child(6) > nav > h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+        }
+        section:nth-child(6)>aside{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        section:nth-child(6)>aside>div{
+            width: 5cm;
+            height: 4cm;
+            background: linear-gradient(white,#BF69B6);
+            margin-top: 2cm;
+            margin-left: 2cm;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        section:nth-child(6)>aside>div>div{
+            width: 5cm;
+            height: 1cm;
+            background: black;
+        }
+        section:nth-child(6)>aside>div>div>h1{
+            margin-top: 1.5cm;
+            margin-left: 1.5cm;
+            color: wheat;
+            font-family: Dubai;
+            z-index: 2;
+        }
+        /*---------------------------------------sixth page------------*/
+
+        section:nth-child(7){
+            width: 100%;
+            height: 1cm;
+            background: #EFF9B4;
+
+        }
+
+        section:nth-child(7)>p{
+            font-size: x-large;
+            text-align: center;
+            transform: translate(0%, 30%);
+            margin: 0;
+            font-size: medium;
+        }
+
+    </style>
+</head>
+
+<body>
+<section>
+    <img src="asserts/lg_g3_abstract-wallpaper-10313132.jpg" ,height="80vh">
+    <aside>
+        <img src="asserts/WhatsApp Image 2021-01-11 at 11.39.02.jpeg">
+    </aside>
+    <section>
+        <img src="asserts/img.png">
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Skills</li>
+            <li>Education</li>
+            <li>Assignments</li>
+            <li>Projects</li>
+        </ul>
+    </section>
+    <nav>
+        <h1>Personal Details :</h1>
+    </nav>
+    <ul>
+        <li>Name: Thrimal Avishka</li>
+        <li>Birthday: 1999.05.03</li>
+        <li>Age: 21 years</li>
+        <li>Address: 53/5B Madapathala,Galle</li>
+        <li>Contact: 0769641477</li>
+        <li>Email: thrimalavishka99@gmail.com</li>
+    </ul>
+    <div>
+        <ul>
+            <li>Follow me On :</li>
+            <li><img src="asserts/icons8_whatsapp_48px.png"></li>
+            <li><img src="asserts/icons8_facebook_48px.png"></li>
+            <li><img src="asserts/icons8_instagram_48px.png"></li>
+            <li><img src="asserts/icons8_twitter_squared_48px.png"></li>
+            <li><img src="asserts/icons8_Facebook_Messenger_48px.png"></li>
+        </ul>
+    </div>
+    <h1>Hellow I'm Thrimal Avishka!
+        Software Engineer.</h1>
+</section>
+
+<section>
+    <img src="asserts/IMG-20201104-WA0012.jpg">
+    <nav>
+        <h1>About Me :</h1>
+    </nav>
+    <p>Hi i'm Thrimal Avishka, I studied Mahinda College Galle,SriLanka.Now i currently following GDSE course at
+        IJSE(Institute Java Software Engineering) at galle branch. </p>
+    <section>
+        <h1>Interested :</h1>
+        <ul>
+            <li>Programming <img src="asserts/icons8_stack_overflow_48px.png"></li>
+            <li>Listning Music <img src="asserts/icons8_musical_notes_48px.png"></li>
+            <li>Watching Movies <img src="asserts/icons8_british_movies_48px.png"></li>
+        </ul>
+        <ul>
+            <li>Gaming <img src="asserts/icons8_game_controller_40px.png"></li>
+            <li>Traveling <img src="asserts/icons8_train_48px.png"></li>
+            <li>Photography <img src="asserts/icons8_google_images_48px.png"></li>
+        </ul>
+
+    </section>
+</section>
+
+<section>
+    <img src="asserts/IMG-20201104-WA0009.jpg">
+    <nav>
+        <h1>Skills :</h1>
+    </nav>
+    <section>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+    </section>
+    <section>
+        <h1>Java<img src="asserts/icons8_java_48px.png"></h1>
+        <h1>HTML<img src="asserts/icons8_html_5_48px.png"></h1>
+        <h1>MySql<img src="asserts/icons8_mysql_50px.png"></h1>
+        <h1>CSS<img src="asserts/icons8_css3_48px_1.png"></h1>
+        <h1>Python<img src="asserts/icons8_python_48px.png"></h1>
+        <h1>Java Script<img src="asserts/icons8_javascript_48px.png"></h1>
+    </section>
+</section>
+
+<section>
+    <div><h1>Primary Education</h1></div>
+    <div><h1>Ordinery Level</h1></div>
+    <div><h1>Advanced Level</h1></div>
+    <div><h1>Higher Education</h1></div>
+    <nav>
+        <h1>Educations :</h1>
+    </nav>
+    <img src="asserts/icons8_walking_80px_1.png">
+
+</section>
+
+<section>
+    <img src="asserts/IMG-20201104-WA0018.jpg">
+    <nav>
+        <h1>Assignments :</h1>
+    </nav>
+    <section>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><img src="asserts/icons8_audit_64px.png"></div>
+    </section>
+    <section>
+        <h1>Assignment 1</h1>
+        <h1>Assignment 2</h1>
+        <h1>Assignment 3</h1>
+        <h1>Assignment 4</h1>
+        <h1>Assignment 5</h1>
+        <h1>Assignment 6</h1>
+        <h1>Assignment 7</h1>
+        <h1>Assignment 8</h1>
+    </section>
+</section>
+
+<section>
+    <nav>
+        <h1>Projects :</h1>
+    </nav>
+    <aside>
+        <div><div><h1>Project 1</h1></div></div>
+        <div><div><h1>Project 2</h1></div></div>
+        <div><div><h1>Project 3</h1></div></div>
+        <div><div><h1>Project 4</h1></div></div>
+        <div><div><h1>Project 5</h1></div></div>
+        <div><div><h1>Project 6</h1></div></div>
+        <div><div><h1>Project 7</h1></div></div>
+        <div><div><h1>Project 8</h1></div></div>
+    </aside>
+</section>
+<section>
+    <p>Thank You! Mobile:+(94)769641477</p>
+</section>
+</body>
+</html>
