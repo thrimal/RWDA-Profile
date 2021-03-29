@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" >
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
     <style>
         body {
             margin-top: 0;
@@ -168,7 +169,7 @@
             left: 0;
             right: 0;
             /*background: #EFF9B4;*/
-            background: linear-gradient(white,#EFF9B4);
+            background: linear-gradient(white, #EFF9B4);
         }
 
         section:nth-child(2) > section > ul {
@@ -231,14 +232,14 @@
             top: 3cm;
             left: 0;
             right: 0;
-            background: linear-gradient(white,#EFF9B4);
+            background: linear-gradient(white, #EFF9B4);
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
         }
 
-        section:nth-child(3)>section>div{
+        section:nth-child(3) > section > div {
             width: 8cm;
             height: 20px;
             border-radius: 20px;
@@ -249,12 +250,12 @@
             z-index: 2;
         }
 
-        section:nth-child(3)>section>h1{
+        section:nth-child(3) > section > h1 {
             margin-top: 1cm;
             margin-left: 2cm;
         }
 
-        section:nth-child(3)>section>div>div{
+        section:nth-child(3) > section > div > div {
             width: 5cm;
             height: 20px;
             border-radius: 20px;
@@ -265,7 +266,7 @@
         /*---------------------------------------fourth page------------*/
         section:nth-child(4) {
             /*background: #80F3F3;*/
-            background: linear-gradient(white,#80F3F3);
+            background: linear-gradient(white, #80F3F3);
             height: 12cm;
         }
 
@@ -287,7 +288,7 @@
             margin: 0;
         }
 
-        section:nth-child(4)>div:nth-child(1){
+        section:nth-child(4) > div:nth-child(1) {
             width: 10cm;
             height: 2cm;
             background: #87F951;
@@ -295,7 +296,8 @@
             top: 9cm;
             left: 8cm
         }
-        section:nth-child(4)>div:nth-child(2){
+
+        section:nth-child(4) > div:nth-child(2) {
             width: 10cm;
             height: 2cm;
             background: #FCFF80;
@@ -303,7 +305,8 @@
             top: 7cm;
             left: 12cm
         }
-        section:nth-child(4)>div:nth-child(3){
+
+        section:nth-child(4) > div:nth-child(3) {
             width: 10cm;
             height: 2cm;
             background: #FBC358;
@@ -311,7 +314,8 @@
             top: 5cm;
             left: 16cm
         }
-        section:nth-child(4)>div:nth-child(4){
+
+        section:nth-child(4) > div:nth-child(4) {
             width: 10cm;
             height: 2cm;
             background: #FA4D4D;
@@ -319,18 +323,21 @@
             top: 3cm;
             left: 20cm
         }
-        section:nth-child(4)>img{
+
+        section:nth-child(4) > img {
             width: 2cm;
             height: 3cm;
             position: absolute;
             top: 2cm;
             left: 18cm;
         }
-        section:nth-child(4)>div>h1{
+
+        section:nth-child(4) > div > h1 {
             text-align: center;
             transform: translate(0%, 60%);
             margin: 0;
         }
+
         /*---------------------------------------fifth page------------*/
 
         section:nth-child(5) > nav {
@@ -359,13 +366,13 @@
             top: 3cm;
             left: 0;
             right: 0;
-            background: linear-gradient(white,#EFF9B4);
+            background: linear-gradient(white, #EFF9B4);
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
 
-        section:nth-child(5)>section>div{
+        section:nth-child(5) > section > div {
             width: 180px;
             height: 120px;
             border-radius: 100%;
@@ -374,12 +381,14 @@
             margin-top: 1cm;
             margin-left: 1cm;
         }
-        section:nth-child(5)>section>div>img{
+
+        section:nth-child(5) > section > div > a > img {
             z-index: 2;
             margin-left: 1.5cm;
             margin-top: 0.5cm;
         }
-        section:nth-child(5)>section>h1{
+
+        section:nth-child(5) > section > h1 {
             margin-top: 4.5cm;
             margin-left: 2cm;
         }
@@ -387,7 +396,7 @@
         /*---------------------------------------sixth page------------*/
         section:nth-child(6) {
             /*background: #80F3F3;*/
-            background: linear-gradient(white,#80F3F3);
+            background: linear-gradient(white, #80F3F3);
             height: 14cm;
         }
 
@@ -408,48 +417,58 @@
             transform: translate(0%, 30%);
             margin: 0;
         }
-        section:nth-child(6)>aside{
+
+        section:nth-child(6) > aside {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
-        section:nth-child(6)>aside>div{
+
+        section:nth-child(6) > aside > div {
             width: 5cm;
             height: 4cm;
-            background: linear-gradient(white,#BF69B6);
+            background: linear-gradient(white, #BF69B6);
             margin-top: 2cm;
             margin-left: 2cm;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        section:nth-child(6)>aside>div>div{
+
+        section:nth-child(6) > aside > div > div {
             width: 5cm;
             height: 1cm;
             background: black;
         }
-        section:nth-child(6)>aside>div>div>h1{
+
+        section:nth-child(6) > aside > div > div > h1 {
             margin-top: 1.5cm;
             margin-left: 1.5cm;
             color: wheat;
             font-family: Dubai;
             z-index: 2;
         }
+
         /*---------------------------------------sixth page------------*/
 
-        section:nth-child(7){
+        section:nth-child(7) {
             width: 100%;
             height: 1cm;
-            background: #EFF9B4;
+            background: linear-gradient(white, #EFF9B4);
 
         }
 
-        section:nth-child(7)>p{
+        section:nth-child(7) > p {
             font-size: x-large;
             text-align: center;
             transform: translate(0%, 30%);
             margin: 0;
             font-size: medium;
         }
+
+
+        /*@media (min-width: 325px) and (max-width: 375px){*/
+
+        /*}*/
 
     </style>
 </head>
@@ -482,17 +501,18 @@
         <li>Contact: 0769641477</li>
         <li>Email: thrimalavishka99@gmail.com</li>
     </ul>
+
     <div>
         <ul>
             <li>Follow me On :</li>
-            <li><img src="asserts/icons8_whatsapp_48px.png"></li>
-            <li><img src="asserts/icons8_facebook_48px.png"></li>
-            <li><img src="asserts/icons8_instagram_48px.png"></li>
-            <li><img src="asserts/icons8_twitter_squared_48px.png"></li>
-            <li><img src="asserts/icons8_Facebook_Messenger_48px.png"></li>
+            <li><a href="https://www.whatsapp.com/"><img src="asserts/icons8_whatsapp_48px.png"></a></li></a>
+            <li><a href="https://www.facebook.com/profile.php?id=100005779035729"><img src="asserts/icons8_facebook_48px.png"></a></li>
+            <li><a href="https://www.instagram.com/thrimalavishka/"><img src="asserts/icons8_instagram_48px.png"></a></li>
+            <li><a href="https://twitter.com/home?lang=en"><img src="asserts/icons8_twitter_squared_48px.png"></a></li>
+            <li><a href="https://www.facebook.com/messages"><img src="asserts/icons8_Facebook_Messenger_48px.png"></a></li>
         </ul>
     </div>
-    <h1>Hellow I'm Thrimal Avishka!
+    <h1>Hellow  I'm Thrimal Avishka!
         Software Engineer.</h1>
 </section>
 
@@ -525,12 +545,24 @@
         <h1>Skills :</h1>
     </nav>
     <section>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
     </section>
     <section>
         <h1>Java<img src="asserts/icons8_java_48px.png"></h1>
@@ -560,14 +592,14 @@
         <h1>Assignments :</h1>
     </nav>
     <section>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
-        <div><img src="asserts/icons8_audit_64px.png"></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/AbsolutePosition.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/Circle%26Bar.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/FixedLayout.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/GridLayout.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/Image%20Slider.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/StickyLayout.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/Simple%20Web%20Layout.html"><img src="asserts/icons8_audit_64px.png"></a></div>
+        <div><a href="https://github.com/thrimal/RWDA-Assignments-/blob/main/WaterDrop.html"><img src="asserts/icons8_audit_64px.png"></a></div>
     </section>
     <section>
         <h1>Assignment 1</h1>
@@ -586,14 +618,30 @@
         <h1>Projects :</h1>
     </nav>
     <aside>
-        <div><div><h1>Project 1</h1></div></div>
-        <div><div><h1>Project 2</h1></div></div>
-        <div><div><h1>Project 3</h1></div></div>
-        <div><div><h1>Project 4</h1></div></div>
-        <div><div><h1>Project 5</h1></div></div>
-        <div><div><h1>Project 6</h1></div></div>
-        <div><div><h1>Project 7</h1></div></div>
-        <div><div><h1>Project 8</h1></div></div>
+        <div>
+            <div><h1>Project 1</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 2</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 3</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 4</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 5</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 6</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 7</h1></div>
+        </div>
+        <div>
+            <div><h1>Project 8</h1></div>
+        </div>
     </aside>
 </section>
 <section>
